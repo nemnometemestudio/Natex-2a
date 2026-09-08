@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  
+    <defs>
+      <!-- Ribbon 1 Upper: Orange-Red to Magenta -->
+      <linearGradient id="symR1Upper" x1="120" y1="48" x2="256" y2="256" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#FF3B14" />
+        <stop offset="28%" stop-color="#FF5722" />
+        <stop offset="65%" stop-color="#FF7A00" />
+        <stop offset="100%" stop-color="#A81594" />
+      </linearGradient>
+
+      <!-- Ribbon 1 Lower: Crimson to Bright Golden Amber -->
+      <linearGradient id="symR1Lower" x1="256" y1="300" x2="424" y2="464" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#B7094C" />
+        <stop offset="22%" stop-color="#D00000" />
+        <stop offset="58%" stop-color="#FF4800" />
+        <stop offset="82%" stop-color="#FF7900" />
+        <stop offset="100%" stop-color="#FFAA00" />
+      </linearGradient>
+
+      <!-- Ribbon 2: White-Violet to Royal Purple to Electric Cyan -->
+      <linearGradient id="symR2" x1="390" y1="48" x2="110" y2="464" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#A855F7" />
+        <stop offset="18%" stop-color="#7C3AED" />
+        <stop offset="42%" stop-color="#5B21B6" />
+        <stop offset="62%" stop-color="#3B18A5" />
+        <stop offset="82%" stop-color="#0284C7" />
+        <stop offset="95%" stop-color="#00A8FF" />
+        <stop offset="100%" stop-color="#38BDF8" />
+      </linearGradient>
+
+      <!-- Translucent Diamond Overlap (Optical Fusion) -->
+      <linearGradient id="symCenterDiamond" x1="204" y1="256" x2="308" y2="256" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#C026D3" stop-opacity="0.95" />
+        <stop offset="50%" stop-color="#D946EF" stop-opacity="0.9" />
+        <stop offset="100%" stop-color="#9333EA" stop-opacity="0.95" />
+      </linearGradient>
+
+      <!-- Top-Right Specular White Gloss Sheen -->
+      <linearGradient id="symTopGloss" x1="320" y1="48" x2="424" y2="90" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.95" />
+        <stop offset="45%" stop-color="#E9D5FF" stop-opacity="0.5" />
+        <stop offset="100%" stop-color="#7C3AED" stop-opacity="0" />
+      </linearGradient>
+
+      <!-- Soft Depth Drop-Shadow under Ribbon 2 onto Ribbon 1 -->
+      <linearGradient id="symShadow" x1="256" y1="349" x2="280" y2="385" gradientUnits="userSpaceOnUse">
+        <stop offset="0%" stop-color="#3B0764" stop-opacity="0.65" />
+        <stop offset="100%" stop-color="#3B0764" stop-opacity="0" />
+      </linearGradient>
+    </defs>
+
+    <!-- Layer 1: Ribbon 1 Upper Arm (Top-Left into Center) -->
+    <path
+      d="M 135.68 48 L 192 48 L 256 163 L 204 256 L 111.22 89.64 A 28 28 0 0 1 135.68 48 Z"
+      fill="url(#symR1Upper)"
+    />
+
+    <!-- Layer 2: Ribbon 1 Lower Arm (Emerging from Center to Bottom-Right) -->
+    <path
+      d="M 256 349 L 308 256 L 400.78 422.36 A 28 28 0 0 1 376.32 464 L 320 464 Z"
+      fill="url(#symR1Lower)"
+    />
+
+    <!-- Layer 3: Ribbon 2 (Full Diagonal Band: Top-Right to Bottom-Left) -->
+    <path
+      d="M 320 48 L 376.32 48 A 28 28 0 0 1 400.78 89.64 L 192 464 L 135.68 464 A 28 28 0 0 1 111.22 422.36 Z"
+      fill="url(#symR2)"
+    />
+
+    <!-- Layer 4: Translucent Glowing Diamond Overlap -->
+    <polygon
+      points="256,163 308,256 256,349 204,256"
+      fill="url(#symCenterDiamond)"
+      style="mix-blend-mode: screen;"
+    />
+
+    <!-- Layer 5: Soft Depth Drop-Shadow on Ribbon 1 under Ribbon 2 -->
+    <polygon
+      points="256,349 308,256 322,282 270,375"
+      fill="url(#symShadow)"
+    />
+
+    <!-- Layer 6: Specular White Gloss Sheen on Upper-Right Ribbon -->
+    <path
+      d="M 320 48 L 376.32 48 A 28 28 0 0 1 400.78 89.64 L 370 78 L 320 48 Z"
+      fill="url(#symTopGloss)"
+    />
+  
+</svg>
