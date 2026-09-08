@@ -1,0 +1,8 @@
+{
+  "name": "Natex Confecções - Indústria Têxtil B2B & Uniformes em Escala",
+  "description": "Indústria têxtil especializada em uniformes profissionais, corporativos, industriais, private label e materiais têxteis sob medida em escala. Conta com Blog de Engenharia Têxtil integrado e sede em Navegantes/SC.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
